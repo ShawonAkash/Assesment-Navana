@@ -1,0 +1,92 @@
+:root {
+  --light-bg: #f0f0f0;
+  --dark-grey: #404040;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1728px;
+  height: 1117px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mySlides,
+.myTextSlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.textslide-container {
+  position: relative;
+  margin: auto;
+  color: var(--dark-grey);
+  background: var(--light-bg);
+  border-radius: 36px;
+  width: 532px;
+  height: 486px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.15em;
+  padding-left: 72px;
+  padding-top: 72px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

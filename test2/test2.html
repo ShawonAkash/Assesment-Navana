@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end intern Test 2</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Raleway:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container fade">
+        <div class="main">
+            <h1>Software Development Lifecycle</h1>
+            <div class="slides">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="img/define.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/plan.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/design.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/implement.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/test.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/maintain.jpg" style="width:100%">
+                    </div>
+                </div>
+                <div class="textslide-container">
+                    <p class="myTextSlides fade">DEFINE</p>
+                    <p class="myTextSlides fade">PLAN</p>
+                    <p class="myTextSlides fade">DESIGN</p>
+                    <p class="myTextSlides fade">IMPLEMENT</p>
+                    <p class="myTextSlides fade">TEST</p>
+                    <p class="myTextSlides fade">MAINTAIN</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showTextSlides()
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function showTextSlides() {
+            var i;
+            var textSlides = document.getElementsByClassName("myTextSlides");
+            for (i = 0; i < textSlides.length; i++) {
+                showSlides()
+            }
+            slideIndex++;
+            if (slideIndex > textSlides.length) {
+                slideIndex = 1
+            }
+
+            textSlides[slideIndex - 1].style.display = "block";
+            setTimeout(showTextSlides, 3000); // Change image every 6 seconds
+        }
+    </script>
+</body>
+
+</html>
