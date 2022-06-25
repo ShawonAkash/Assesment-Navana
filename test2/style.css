@@ -18,8 +18,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1728px;
-  height: 1117px;
+  width: 100vh;
+  height: 100vh;
 }
 .main {
   display: flex;
@@ -66,14 +66,14 @@ img {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0;
   }
 
   to {
@@ -83,7 +83,7 @@ img {
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0;
   }
 
   to {

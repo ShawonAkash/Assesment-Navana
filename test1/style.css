@@ -89,3 +89,126 @@ body {
   justify-content: center;
   border-radius: 14px;
 }
+
+@media screen and (max-width: 720px) {
+  :root {
+    --light-grey: #e0e0e0;
+    --dark-grey: #606060;
+    --red-bg: #da1e5d;
+    width: 700px;
+    height: 600px;
+    padding-left: 20px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  #layout-1-content > h2 {
+    background-color: var(--red-bg);
+    color: #ffffff;
+    width: 480px;
+    height: 150px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #layout-2-content {
+    grid-template-columns: 160px 160px 160px;
+    gap: 10px;
+  }
+  #layout-3-content > h2 {
+    background-color: var(--red-bg);
+    color: #ffffff;
+    width: 480px;
+    height: 150px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #layout-3-content > div {
+    display: grid;
+    grid-template-columns: 100px 260px 100px;
+    grid-gap: 10px;
+  }
+  #layout-3-content > div > h2 {
+    height: 419px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+  }
+}
+@media screen and (max-width: 380px) {
+  :root {
+    --light-grey: #e0e0e0;
+    --dark-grey: #606060;
+    --red-bg: #da1e5d;
+    width: 380px;
+    height: 300px;
+    padding-left: 20px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .button {
+    width: 90px;
+    height: 64px;
+    background: var(--light-grey);
+    border-radius: 14px;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 22px;
+    border: none;
+  }
+  #layout-1-content > h2 {
+    background-color: var(--red-bg);
+    color: #ffffff;
+    width: 277px;
+    height: 90px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #layout-2-content {
+    grid-template-columns: 85px 85px 85px;
+    gap: 10px;
+  }
+  #layout-3-content > h2 {
+    background-color: var(--red-bg);
+    color: #ffffff;
+    width: 277px;
+    height: 90px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #layout-3-content > div {
+    display: grid;
+    grid-template-columns: 60px 140px 60px;
+    grid-gap: 10px;
+  }
+  #layout-3-content > div > h2 {
+    height: 419px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+  }
+}
