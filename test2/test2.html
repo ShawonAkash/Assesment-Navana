@@ -53,24 +53,25 @@
     </div>
 
     <script>
-        var slideIndex = 0;
+
+        var slideIndex = 0
         showTextSlides()
         function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
+            let i
+            var slides = document.getElementsByClassName("mySlides")
             for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                slides[i].style.display = "none"
             }
             slideIndex++;
             if (slideIndex > slides.length) {
                 slideIndex = 1
             }
-            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = "block"
         }
 
         function showTextSlides() {
-            var i;
-            var textSlides = document.getElementsByClassName("myTextSlides");
+            let i
+            var textSlides = document.getElementsByClassName("myTextSlides")
             for (i = 0; i < textSlides.length; i++) {
                 showSlides()
             }
@@ -78,9 +79,8 @@
             if (slideIndex > textSlides.length) {
                 slideIndex = 1
             }
-
-            textSlides[slideIndex - 1].style.display = "block";
-            setTimeout(showTextSlides, 3000); // Change image every 6 seconds
+            textSlides[slideIndex - 1].style.display = "block"
+            setTimeout(showTextSlides, 5000)
         }
     </script>
 </body>
